@@ -28,7 +28,9 @@ namespace krejo_TicTacToe
 
         private void kaestchen_1_1_Click(object sender, RoutedEventArgs e)
         {
-           
+            var bisherigerVordergrund = kaestchen_1_1.Foreground;
+            kaestchen_1_1.Foreground = kaestchen_1_1.Background;
+            kaestchen_1_1.Background = bisherigerVordergrund;
         }
     }
 }
