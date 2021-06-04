@@ -32,7 +32,7 @@
         </Grid.RowDefinitions>
         
         <!-- Zeile 1-->
-        <Button x:Name="kaestchen_1_1" Grid.Row="0" Grid.Column="0" Content="X" Click="kaestchen_1_1_Click"/>
+        <Button x:Name="kaestchen_1_1" Grid.Row="0" Grid.Column="0" Content="X" Click="Kaestchen_1_1_Click"/>
         <Button x:Name="kaestchen_1_2" Grid.Row="0" Grid.Column="1" Content="O"/>
         <Button x:Name="kaestchen_1_3" Grid.Row="0" Grid.Column="2"/>
         <!-- Zeile 2-->
