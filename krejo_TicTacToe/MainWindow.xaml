@@ -5,14 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:krejo_TicTacToe"
         mc:Ignorable="d"
-        Title="Flam4Ing TicTacToe" Height="500" Width="500">
+        Title="Flam4Ing TicTacToe" Height="500" Width="500" Background="#FFF5F550" HorizontalContentAlignment="Center">  
+            <!-- TitleBar Anpassung "Backround Colour" und "HorizontalAlignment" funktionieren nicht -->
     <Window.Resources>
         <Style TargetType="Button">
             <Setter Property="Margin" Value="4,4,4,4"/>
             <Setter Property="Background" Value="#FF84B28B"/>
             <Setter Property="Foreground" Value="#FFF0D217"/>
+            <Setter Property="BorderThickness" Value="1.0"/>
+            <Setter Property="BorderBrush" Value="Beige"/>
             <Setter Property="FontSize" Value="100"/>
-            <Setter Property="FontFamily" Value="Arial Black"/>
+            <Setter Property="FontFamily" Value="Arial"/>
+            <Setter Property="FontWeight" Value="Bold"/>
         </Style>
     </Window.Resources>
     <Grid Name="spielfeld" Background="Coral">
@@ -28,7 +32,7 @@
         </Grid.RowDefinitions>
         
         <!-- Zeile 1-->
-        <Button x:Name="kaestchen_1_1" Grid.Row="0" Grid.Column="0" Content="X"/>
+        <Button x:Name="kaestchen_1_1" Grid.Row="0" Grid.Column="0" Content="X" Click="kaestchen_1_1_Click"/>
         <Button x:Name="kaestchen_1_2" Grid.Row="0" Grid.Column="1" Content="O"/>
         <Button x:Name="kaestchen_1_3" Grid.Row="0" Grid.Column="2"/>
         <!-- Zeile 2-->
