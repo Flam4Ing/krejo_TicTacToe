@@ -5,8 +5,30 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:krejo_TicTacToe"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
+        Title="Flam4Ing TicTacToe" Height="500" Width="500">
+    <Grid Name="spielfeld">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <!-- Zeile 1-->
+        <Button x:Name="kaestchen_1_1" Grid.Row="0" Grid.Column="0"/>
+        <Button x:Name="kaestchen_1_2" Grid.Row="0" Grid.Column="1"/>
+        <Button x:Name="kaestchen_1_3" Grid.Row="0" Grid.Column="2"/>
+        <!-- Zeile 2-->
+        <Button x:Name="kaestchen_2_1" Grid.Row="1" Grid.Column="0"/>
+        <Button x:Name="kaestchen_2_2" Grid.Row="1" Grid.Column="1"/>
+        <Button x:Name="kaestchen_2_3" Grid.Row="1" Grid.Column="2"/>
+        <!-- Zeile 3-->
+        <Button x:Name="kaestchen_3_1" Grid.Row="2" Grid.Column="0"/>
+        <Button x:Name="kaestchen_3_2" Grid.Row="2" Grid.Column="1"/>
+        <Button x:Name="kaestchen_3_3" Grid.Row="2" Grid.Column="2"/>
     </Grid>
 </Window>
