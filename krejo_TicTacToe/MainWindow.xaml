@@ -6,7 +6,16 @@
         xmlns:local="clr-namespace:krejo_TicTacToe"
         mc:Ignorable="d"
         Title="Flam4Ing TicTacToe" Height="500" Width="500">
-    <Grid Name="spielfeld">
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Margin" Value="4,4,4,4"/>
+            <Setter Property="Background" Value="#FF84B28B"/>
+            <Setter Property="Foreground" Value="#FFF0D217"/>
+            <Setter Property="FontSize" Value="100"/>
+            <Setter Property="FontFamily" Value="Arial Black"/>
+        </Style>
+    </Window.Resources>
+    <Grid Name="spielfeld" Background="Coral">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
@@ -19,8 +28,8 @@
         </Grid.RowDefinitions>
         
         <!-- Zeile 1-->
-        <Button x:Name="kaestchen_1_1" Grid.Row="0" Grid.Column="0"/>
-        <Button x:Name="kaestchen_1_2" Grid.Row="0" Grid.Column="1"/>
+        <Button x:Name="kaestchen_1_1" Grid.Row="0" Grid.Column="0" Content="X"/>
+        <Button x:Name="kaestchen_1_2" Grid.Row="0" Grid.Column="1" Content="O"/>
         <Button x:Name="kaestchen_1_3" Grid.Row="0" Grid.Column="2"/>
         <!-- Zeile 2-->
         <Button x:Name="kaestchen_2_1" Grid.Row="1" Grid.Column="0"/>
